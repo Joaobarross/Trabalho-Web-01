@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #61788C; 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*cabeçalho*/
+.cabecalho{
+    height: 10vh;
+    background: #02213b;
+    display: flex;
+}
+
+.logo > h1{
+    color: #8cb5eb;
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+    top: 35%;
+    left: 50%;
+}
+.logo{
+    text-decoration: none;
+}
+/*nevegação*/
+.nav-lista{
+    display: flex;
+    padding: 35px;
+    position: absolute;
+    left: 47%;
+    top: 1%;
+}
+
+.nav-lista > li{
+    margin-left: 30px;
+}
+
+.nav-lista > li > a{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8cb5eb;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    position: relative;
+    transition: .5s;
+}
+
+.nav-lista > li > a:hover{
+    letter-spacing: .20rem;
+    color: #24fdeb;
+    cursor: pointer;
+}
+
+
+/*principal*/
+.principal{
+    display: flex;
+    background: url(bg1.jpg) no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 92vh
+}
+.conteiner{
+    width: 50%;
+    background: #00000054;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px #000000;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esquerda{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.esquerda::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00d9ff; 
+}
+.direita{
+    width: 75%;
+    margin-left: 75px;
+}
+.topico-box{
+    font-size: 23px;
+    font-weight: 600;
+    color: #16b1ee;
+}
+.direita p{
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 10px;
+    color: aliceblue;
+}
+.direita h2{
+    color: #00d9ff;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 30px;
+}
+/*rodape*/
+.rodape{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #052949;
+}
+.rodape p{
+    position: absolute;
+    left: 35%;
+}

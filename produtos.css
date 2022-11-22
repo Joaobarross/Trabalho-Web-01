@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cabeçalho*/
+.cabecalho{
+    height: 10vh;
+    background: #02213b;
+    display: flex;
+}
+
+.logo > img{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    left: 20%;
+}
+/*nevegação*/
+.nav-lista{
+    display: flex;
+    padding: 35px;
+    position: absolute;
+    left: 47%;
+}
+.nav-lista > li{
+    margin-left: 30px;
+}
+
+.nav-lista > li > a{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8cb5eb;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    position: relative;
+    transition: .5s;
+}
+
+.nav-lista > li > a:hover{
+    letter-spacing: .20rem;
+    color: #24fdeb;
+    cursor: pointer;
+}
+
+
+
+li > a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+
+
+/*principal*/
+.principal{
+    display: flex;
+    background: url(bg1.jpg) no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    height: 92vh
+}
+.sessao-principal{
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 6%;
+    display: flex;
+    width: 1500px;
+    height: 900px;
+    margin-top: 8px;
+    background: #3838387a;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+.sessao-principal > div > a{
+    color: aliceblue;
+    text-decoration: none;
+    align-items: center;
+    
+    
+}
+
+
+.sessao-principal > div >p{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sessao-principal > div{
+    background: #052949;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sessao-principal > a:hover{
+    opacity: .10;
+}
+
+
+
+
+/*rodape*/
+
+
+.rodape{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #052949;
+}
+.rodape p{
+    position: absolute;
+    left: 35%;
+}
+.rodape a{
+    align-items: center;
+    margin-left: 5px;
+}
+.rodape a:hover{
+    opacity: .8;
+}

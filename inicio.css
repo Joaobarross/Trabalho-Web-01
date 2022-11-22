@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #61788C; 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+/*cabeçalho*/
+.cabecalho{
+    height: 10vh;
+    background: #02213b;
+    display: flex;
+}
+
+.logo > h1{
+    color: #8cb5eb;
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+    top: 35%;
+    left: 50%;
+}
+.logo{
+    text-decoration: none;
+}
+/*nevegação*/
+.nav-lista{
+    display: flex;
+    padding: 35px;
+    position: absolute;
+    left: 47%;
+    top: 1%;
+}
+
+.nav-lista > li{
+    margin-left: 30px;
+}
+
+.nav-lista > li > a{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8cb5eb;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    position: relative;
+    transition: .5s;
+}
+
+.nav-lista > li > a:hover{
+    letter-spacing: .20rem;
+    color: #24fdeb;
+    cursor: pointer;
+}
+
+
+/*principal*/
+.principal{
+    display: flex;
+    background: url(bg1.jpg) no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    height: 92vh
+}
+
+.logo{
+    position: relative;
+    left: 35%;
+    bottom: 10%;
+}
+section{
+align-items: center;
+position: absolute;
+bottom: 20%;
+left: 20%;
+display: flex;
+width: 1000px;
+right: 100px;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+section > p {
+font-size: 30px;
+color: white;
+margin-bottom: 20px;
+font-weight: 200;
+}
+    
+
+/*rodape*/
+.rodape{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #052949;
+}
+.rodape p{
+    position: absolute;
+    left: 35%;
+}
+
